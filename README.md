@@ -42,7 +42,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm manage.py runstrver
+  npm manage.py runserver
 ```
 
 # models define
