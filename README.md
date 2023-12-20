@@ -38,6 +38,31 @@ Install dependencies
 ```bash
   npm install *
 ```
+Adding path of your webscript
+
+'DIRS': [r'E:\Projects\E-commerse\ecommerce\Our_Shop\template'],
+
+Change this to your own path
+
+in ..\ecommerce\settings.py
+
+```bash
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [r'E:\Projects\E-commerse\ecommerce\Our_Shop\template'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
 
 Start the server
 
